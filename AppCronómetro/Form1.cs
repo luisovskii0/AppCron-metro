@@ -36,7 +36,7 @@ namespace AppCronómetro
         {
             stopwatch.Restart();
             Tcronometro.Enabled = false;
-            appCron = "00:00.0";
+            appCron = "00:00:00.0";
             lbCronometro.Text = appCron;
             Lapso.Items.Clear();
         }
@@ -52,12 +52,13 @@ namespace AppCronómetro
             TimeSpan ts = new TimeSpan( 0, 0, 0, 0, (int)
                 stopwatch.ElapsedMilliseconds);
 
+            int hours = ts.Hours;
             int minute = ts.Minutes;
             int second = ts.Seconds;
             int millisecond = ts.Milliseconds;
 
 
-            appCron = $"{minute}:{second}:{millisecond}";
+            appCron = $"{hours}:{minute}:{second}.{millisecond}";
             lbCronometro.Text = appCron;
         }
 

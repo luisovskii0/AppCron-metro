@@ -111,7 +111,7 @@
             Lapso.ForeColor = SystemColors.HighlightText;
             Lapso.FormattingEnabled = true;
             Lapso.ItemHeight = 23;
-            Lapso.Location = new Point(347, 202);
+            Lapso.Location = new Point(344, 202);
             Lapso.Name = "Lapso";
             Lapso.Size = new Size(117, 115);
             Lapso.TabIndex = 13;
@@ -136,11 +136,11 @@
             lbCronometro.BackColor = Color.Transparent;
             lbCronometro.Font = new Font("Bauhaus 93", 72F);
             lbCronometro.ForeColor = SystemColors.HighlightText;
-            lbCronometro.Location = new Point(182, 80);
+            lbCronometro.Location = new Point(111, 80);
             lbCronometro.Name = "lbCronometro";
-            lbCronometro.Size = new Size(392, 108);
+            lbCronometro.Size = new Size(538, 108);
             lbCronometro.TabIndex = 7;
-            lbCronometro.Text = "00:00.0";
+            lbCronometro.Text = "00:00:00.0";
             lbCronometro.Click += label1_Click;
             // 
             // pictureBox1
